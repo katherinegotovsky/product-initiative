@@ -76,9 +76,9 @@ nav button{
 } 
 
 
-a:hover{
-  background-color: #3C763E;
-}
+/*a:hover{
+  background-color: ;
+}*/
 
 #intro {
 	min-height: 80vh;
@@ -161,10 +161,6 @@ button {
 
 }
 
-.timeline p {
-	color: #999999;
-}
-
 
 .timeline-event {
 	position: relative;
@@ -203,7 +199,7 @@ button {
 
 }
 
-#date1, #date2, #date3, #date4 {
+#date1, #date2, #date3, #date4, #date5 {
 	color: #469049;
 	font-weight: bolder;
 }
@@ -225,7 +221,7 @@ button {
 	margin-bottom: 0;
 	}
 
-section h2 {
+#hiring h2, #team h2 {
 	text-align: center;
 }
 
@@ -243,6 +239,7 @@ section h2 {
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 6vh;
+	max-height: 1vh;
 }
 
 .circle {
@@ -268,7 +265,7 @@ section h2 {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-top: 4vh;
+	margin-top: 8vh;
 }
 
 .schools img {
