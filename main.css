@@ -62,8 +62,8 @@ nav ul{
 }
 
 section {
-	margin-top: 4vh;
-	margin-bottom: 4vh;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
 	padding-top: 4vh;
 }
 
@@ -225,6 +225,10 @@ button {
 	margin-bottom: 0;
 	}
 
+section h2 {
+	text-align: center;
+}
+
 .footer {
 	background-color: #76C962;
 	margin-bottom: 0;
@@ -273,6 +277,67 @@ button {
 	margin: 5vh;
 }
 
+.join-container {
+	display: flex;
+	flex-direction: row;
+	text-align: left;
+	margin-top: 10vh;
+}
+
+.join-text {
+	max-width: 50%;
+	height: auto;
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+}
+
+.reason {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 15vw;
+}
+
+#join .wrapper {
+	text-align: center;
+}
+
+.reason img {
+	max-width:15vh;
+	height: auto;
+	margin-right: 20vh;
+	display: flex;
+	justify-content: center;
+}
+
+#join {
+	width: 100vw;
+	justify-content: center;
+}
+
+.hiring-wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.person {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 25%;
+}
+
+.person img {
+	max-width: 15vh;
+	display: flex;
+	justify-content: center;
+	margin-left: 35%;
+	border-radius: 50px;
+	margin-bottom: 3vh;
+
+}
 
 section div img{width:50%;right:-2%; max-width: 100%;}
 
