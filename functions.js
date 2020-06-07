@@ -35,6 +35,8 @@ anime.timeline({loop: false})
 
 
 // Scroll Reveals
+ScrollReveal().reveal('#intro h1', { delay: 200, duration: 2000 });
+ScrollReveal().reveal('#intro h2', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#about', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#program', { delay: 400, duration: 2000 });
 ScrollReveal().reveal('#roles', { delay: 400, duration: 2000 });
