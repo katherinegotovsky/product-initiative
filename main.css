@@ -18,8 +18,9 @@ body {
 }
 
 #about .wrapper {
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 15%;
+	margin-right: 15%;
+	min-height: 100vh;
 } 
 
 nav li{
@@ -32,7 +33,7 @@ nav li{
   font-size: 3vh;
 }
 
-a{
+nav a{
   
   text-decoration: none;
   color: black;
@@ -71,9 +72,6 @@ body{
   margin: 0;
 }
 
-nav button{
-  display: none;
-} 
 
 
 /*a:hover{
@@ -88,15 +86,20 @@ nav button{
 	cursor: pointer;
 	border: none;
 	padding: 1vh;
-	max-width: 15%;
+	max-width: 20%;
+	background: #76C962;
+	font-size: 2vh;
+	margin-top: 3vh;
+	font-family: 'Merriweather', serif;
 }
 
 #about {
-	background-color: #76C962;
+	background-color: #B1E4A4;
 	min-height: 60vh;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
+	/*text-align: center;*/
+	padding-bottom: 10vh;
 	justify-content: center;
 }
 
@@ -112,7 +115,7 @@ h1 {
 	margin-bottom: 3vh;
 }
 
-h1 span {
+h1 .green {
 	color: #76C962;
 }
 
@@ -123,7 +126,11 @@ h2 {
 
 p {
 	line-height: 4vh;
-	margin-top: 0;
+	margin-top: 1vh;
+	font-size: 2.5vh;
+	font-family: 'Open Sans', serif;
+	font-weight: lighter;
+
 }
 
 h3 {
@@ -138,16 +145,16 @@ h5 {
 	color: #565656;
 }
 
-button {
-	padding: 1vh;
-	background: #76C962;
-	font-size: 2vh;
-	margin-top: 3vh;
-	font-family: 'Merriweather', serif;
+.footer h5 {
+	margin-bottom: 3vh;
 }
 
 #program h2 {
 	padding-bottom: 4vh;
+}
+
+#program {
+	padding-bottom: 5vh;
 }
 
 
@@ -158,6 +165,7 @@ button {
 	/*max-width: 46em;*/
 	padding: 0;
 	margin-left: 10%;
+	max-width: 60%;
 
 }
 
@@ -226,12 +234,13 @@ button {
 }
 
 .footer {
-	background-color: #76C962;
+	background-color: #B1E4A4;
 	margin-bottom: 0;
-	height: 25vh;
+	height: 10vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 10vh;
 }
 
 .social {
@@ -239,7 +248,8 @@ button {
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 6vh;
-	max-height: 1vh;
+	height: 15px;
+	width: auto;
 }
 
 .circle {
@@ -264,14 +274,17 @@ button {
 .schools {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	margin-top: 8vh;
+	justify-content: left;
+	flex-wrap: wrap;
+	margin-top: 10vh;
+	margin-bottom: 10vh;
 }
 
 .schools img {
 	max-height: 12vh;
 	width: auto;
-	margin: 5vh;
+	margin-left: 10vh;
+
 }
 
 .join-container {
@@ -298,6 +311,7 @@ button {
 
 #join .wrapper {
 	text-align: center;
+	flex-wrap: wrap;
 }
 
 .reason img {
@@ -313,9 +327,25 @@ button {
 	justify-content: center;
 }
 
+#hiring {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20vh;
+	text-align: center;
+	padding-bottom: 10vh;
+}
+
+#hiring h3, h5, p {
+	margin: 0.5vh;
+}
+
 .hiring-wrapper {
+	padding-top: 10vh;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .person {
@@ -331,35 +361,40 @@ button {
 	display: flex;
 	justify-content: center;
 	margin-left: 35%;
-	border-radius: 50px;
+	border-radius: 50vh;
 	margin-bottom: 3vh;
 
 }
 
-section div img{width:50%;right:-2%; max-width: 100%;}
+#roles {
+	text-align: center;
+	min-height: 100vh;
+	background-color: #B1E4A4;
+	padding-bottom: 10vh;
+	padding-top: 10vh;
+}
 
-@media only screen and (max-width: 500px) {
-  ul{
-    flex-direction: column;
-  }
-  
-  a{
-    display: block;
-  }
-  
-  li{
-    margin: 0;
-  }
-  
-  button{
-    display: block;
-    
-    padding: 2vw;
-    font-size: 3vh;
-    background-color: #AFE0FF;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    align-self: flex-start;
-  }
+.role {
+	max-width: 30%;
+	margin-left: 5vw;
+	margin-right: 5vw;
+	margin-bottom: 5vh;
+	margin-top: 5vh;
+}
+
+#roles-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+#roles img {
+	max-width: 5vw;
+	padding-bottom: 4vh;
+	height: auto;
+}
+
+section div img{width:50%;right:-2%; max-width: 100%;}
 }

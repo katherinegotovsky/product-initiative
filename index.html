@@ -11,10 +11,20 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta charset='utf-8'>
 	<meta name="HandheldFriendly" content="true">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
 
 	<link rel="stylesheet" type="text/css" href="./main.css">
+	<script src="https://unpkg.com/scrollreveal" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+
+
+
 
 
 
@@ -25,35 +35,43 @@
 	
 	<nav>
 		<ul>
-			<button id="nav-button"></button>
 			<li> <a href="#">
 				<img src="./assets/tpi.png"> 
 			</a> </li>
-			<li> <a href="#">Home</a> </li>
-			<li> <a href="#projects">Projects</a></li>
-			<li> <a href="#team">Team</a> </li>
+			<li> <a href="#about">About</a> </li>
+			<li> <a href="#program">Program</a></li>
+			<li> <a href="#roles">Roles</a></li>
+			<li> <a href="#join">Join</a></li>
 		</ul>
 	</nav>
 
 
 	<section id="intro">	
 		<div class="wrapper">
-			<h1> The Product Initiative<span>.</span> </h1>
+			<h1 class="ml3"> The Product Initiative</h1>
 			<h2> Canada's national product development incubator. By students, for students. </h2>
-			<button>View our work</button>
-		</section>
+			<button>Learn more</button>
+		</div>
+	</section>
 
-		<section id="about">
-			<div class="wrapper">
-				<h2> About Us </h2>
-				<p> We are a product incubator run for students, by students. Over the course of the year, four multi disciplinary teams of eight students from Commerce, Computer Science and Engineering compete to build and launch the best software product. </p>
-				<div class="schools">
-					<h3> Participating <br> schools: </h3>
-					<img class="waterloo" src="./assets/waterloo.png">
-					<img class="western" src="./assets/western.png">
-				</div>
+	<section id="about">
+		<div class="wrapper">
+			<h2> About Us </h2>
+
+			<p> The Product Initiative pairs talented technical students from the University of Waterloo with Canada's best business students at Western. Their mission? To build something <b> BIG</b>.
+
+				<br> <br> Over the course of the summer, teams will work together to build and launch software products. Through bootcamps, mentorship programs, and networking opportunities, we subject the participants of our program to the highest level of professional and personal growth.
+
+				<br> <br> Have your summer plans been impacted by covid-19? Have extra time on your hands? <b> Apply today. </b>
+
+			</p>
+			<div class="schools">
+<!-- 				<img class="waterloo" src="./assets/waterloo.png">
+				<img class="western" src="./assets/western.png"> -->
+				<!-- <img class="laurier" src="./assets/laurier.png"> -->
 			</div>
-		</section>
+		</div>
+	</section>
 
 <!-- 		<section id="teams">
 			<div class="wrapper">
@@ -66,146 +84,181 @@
 		</section> -->
 
 		<section id="program">
-			<ul class="timeline">
+			<div class="timeline">
 				<h2> Our Program </h2>
-				<div class="timeline-event">
+				<div id="milestone1" class="timeline-event">
 					<label class="timeline-event-icon"></label>
 					<div class="timeline-event-copy">
 						<p  id="date1" class=" timeline-event-thumbnail">Jun 22 - Jun 28</p>
 						<div style="margin-left: 15px;">
 							<h3>Bootcamp</h3>
-							<p>Participants go through a bootcamp where they learn essential skills for their role.</p>
+							<p>Learn what it takes to be a successful PM, designer, developer, or business analyst.</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="timeline-event">
+				<div id="milestone2" class="timeline-event">
 					<label class="timeline-event-icon"></label>
 					<div class="timeline-event-copy">
 						<p id="date2" class=" timeline-event-thumbnail">Jun 29 - July 12 </p>
 						<div style="margin-left: 15px;">
 							<h3>Product Ideation and User Research</h3>
-							<p>Team members meet each other. They meet and talk about problem spaces they want to tackle. They come up with a preliminary idea. </p>
+							<p>Ideate on problems with your team. Identify problem spaces you are passionate about. Come up with the idea for something big. </p>
 						</div>
 					</div>
 				</div>
 
-				<div class="timeline-event">
+				<div id="milestone3" class="timeline-event">
 					<label class="timeline-event-icon"></label>
 					<div class="timeline-event-copy">
 						<p id="date3" class="timeline-event-thumbnail">July 12</p>
 						<div style="margin-left: 15px;">
 							<h3>Product Pitch</h3>
-							<p>The teams pitch their product ideas to other program participants and mentors.</p>
+							<p>Pitch your product idea to a network of industry mentors &mdash; designers, product managers, developers, and analysts.</p>
 						</div>
 					</div>
 				</div>
 
-				<div class="timeline-event">
+				<div id="milestone4" class="timeline-event">
 					<label class="timeline-event-icon"></label>
-					<div class="timeline-event-copy">
+					<div  class="timeline-event-copy">
 						<p id="date4" class="timeline-event-thumbnail">Jul 13 - August 17</p>
 						<div style="margin-left: 15px;">
 							<h3>Product Development</h3>
-							<p>The teams create their products.</p>
+							<p>Work in teams to build out a real minimum viable product &mdash; a side project you will have under your belt for the rest of your career. </p>
 						</div>
-					</ul>
+					</div>
 				</div>
 
-				<div class="timeline-event">
+				<div id="milestone5" class="timeline-event">
 					<label class="timeline-event-icon"></label>
 					<div class="timeline-event-copy">
 						<p id="date5" class="timeline-event-thumbnail">August 17</p>
 						<div style="margin-left: 15px;">
 							<h3>Final Product Pitch</h3>
-							<p>The teams pitch their MVPs to one another. </p>
+							<p>Showcase your work to industry mentors, program participants, and national organizers. It's time to shine! </p>
 						</div>
-					</ul>
-				</div>
-
-			</ul>
-		</section>
-
-		<section id="join">
-			<div class="wrapper">
-				<h2> Why Join? </h2>
-				<p> Our members get a variety of high quality experiences that prepare them for roles in tech. </p>
-				<div class="reason">
-					<div class="join-container">
-						<img src="assets/icon1.svg"> 
-						<div class="join-text">
-							<h3> Gain real experience with products. </h3>
-							<p> Build something that you can take with you to interviews, learn new skills, or turn into a business. </p>
-						</div>
-						
-					</div>	
-				</div>
-				<div class="reason">
-					<div class="join-container">
-						<img src="assets/icon2.svg">
-						<div class="join-text">
-							<h3> Network with the best </h3>
-							<p> Gain exclusive access to a network of industry mentors. </p>
-						</div>
-					</div>	
-				</div>
-				<div class="reason">
-					<div class="join-container">
-						<img src="assets/icon3.svg">
-						<div class="join-text">
-							<h3> Learn something new </h3>
-							<p> Our team prepares curated content and workshops that will help you develop the skills you need to succeed. </p>
-						</div>
-						
 					</div>
 				</div>
+
 			</div>
 		</section>
 
-		<section id="hiring">
-			<h2> Our Team </h2>
-			<div class="hiring-wrapper">
-				<div class="person">
-					<img src="./assets/katherine.jpg">
-					<h3> Katherine Gotovsky </h3>
-					<p> Description of Katherine </p>
+		<section id="roles">
+			<!-- 			<div class="wrapper"> -->
+				<h2> Our Roles </h2>
+				<p> Learn more about the roles we have available! </p>
+				<div id="roles-wrapper">
+					<div class="role">
+						<img src="./assets/product.png">
+						<h3> Product Managers </h3>
+						<p> Guide the success of your product. Define product vision, set the strategy, roadmap, and feature definition for your product. Manage a team of designers, engineers, and analysts to bring your product to life. </p>
+					</div>
+					<div class="role">
+						<img src="./assets/code.png">
+						<h3> Developers </h3>
+						<p> Architect and build your product. Gain experience in full-stack development to bring your product from idea to reality. </p>
+					</div>
+					<div class="role">
+						<img src="./assets/design.png">
+						<h3> Designers </h3>
+						<p> Use for eye for design to build a beautiful, user-friendly product. Craft journey maps, wireframes, prototypes and designs that create a high-quality experience for the product's end user. </p>
+					</div>
+					<div class="role">
+						<img src="./assets/business.png">
+						<h3> Business Analysts </h3>
+						<p> Develop a sustainable business model for your product by leading the creation of marketing & financial strategies. Build compelling pitch decks that sell others on your product. </p>
+						<!-- 					</div> -->
+					</div>
 				</div>
-				<div class="person">
-					<img src="./assets/kitan.png">
-					<h3> Kitan Admenium </h3>
-					<p> Description of Kitan </p>
+			</section>
+
+			<section id="join">
+				<div class="wrapper">
+					<h2> Why Join? </h2>
+					<p> Our members gain a variety of high quality experiences that prepare them for roles in tech. </p>
+					<div class="reason">
+						<div class="join-container">
+							<img src="assets/icon1.svg"> 
+							<div class="join-text">
+								<h3> Gain real product experience.</h3>
+								<p> Build a side project that you can use for your portfolio &mdash; or turn into a business. </p>
+							</div>
+
+						</div>	
+					</div>
+					<div class="reason">
+						<div class="join-container">
+							<img src="assets/icon2.svg">
+							<div class="join-text">
+								<h3> Network with the best </h3>
+								<p> Gain exclusive access to a network of industry mentors and workshops that will teach you the skills for successs. </p>
+							</div>
+						</div>	
+					</div>
+					<div class="reason">
+						<div class="join-container">
+							<img src="assets/icon3.svg">
+							<div class="join-text">
+								<h3> Learn something new </h3>
+								<p> Whether through our curated content, or your hands-on experience, gain skills that accelerate your professional career. </p>
+							</div>
+
+						</div>
+					</div>
 				</div>
-				<div class="person">
-					<img src="./assets/leon.png">
-					<h3> Leon </h3>
-					<p> Description of Leon </p>
-				</div>
+			</section>
+
+			<section id="hiring">
+				<div class="wrapper">
+					<h2> Our Team </h2>
+					<p> Our team believes that multidisciplinary teams build the best products. We are a team of software engineers, management consultants, and product managers that have come together to allow students to build something big. </p>
+					<div class="hiring-wrapper">
+						<div class="person">
+							<img src="./assets/katherine.jpg">
+							<h3> Katherine Gotovsky </h3>
+							<h5> UW CS/BBA '23 </h5>
+							<a href="https://www.linkedin.com/in/katherinegotovsky/">LinkedIn </a>
+						</div>
+						<div class="person">
+							<img src="./assets/owen.jpg">
+							<h3> Owen Matsuda </h3>
+							<h5> UW CS/BBA '23 </h5>
+							<p> Description of Owen </p>
+						</div>
+						<div class="person">
+							<img src="./assets/leon.jpg">
+							<h3> Leon Fattakhov </h3>
+							<h5> UW CS '23 </h5>
+							<p> Description of Leon </p>
+						</div>
 <!-- 				<div class="person">
 					<img src="./assets/kitan.png">
 					<h3> Owen </h3>
 					<p> Description of Owen </p>
 				</div> -->
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="footer">
-			<h5> © The Product Initiative 2020 </h5>
-			<div class="social">
-				<a class="circle" href="https://www.linkedin.com/in/katherinegotovsky/" >
-					<img id="linkedin" src="./assets/linkedin.png" >
-				</a>
-				<a class="circle" href="https://www.github.com/katherinegot/" >
-					<img id="github" src="./assets/github.png" >
-				</a>
-				<a class="circle" href="" >
-					<img id="resume" src="./assets/link.png" >
-				</a>
-			</div>
-		</section>
+	<section class="footer">
+		<h5> © The Product Initiative 2020 </h5>
+		<!-- <div class="social">
+			<a class="circle" href="https://www.linkedin.com/in/katherinegotovsky/" >
+				<img id="linkedin" src="./assets/linkedin.png" >
+			</a>
+			<a class="circle" href="https://www.github.com/katherinegot/" >
+				<img id="github" src="./assets/github.png" >
+			</a>
+			<a class="circle" href="" >
+				<img id="resume" src="./assets/link.png" >
+			</a>
+		</div> -->
+	</section>
 
-		<script src="./navbar.js" type="text/javascript"></script>
-		<script src="./functions.js" type="text/javascript"></script>
+	<script src="./navbar.js" type="text/javascript"></script>
+	<script src="./functions.js" type="text/javascript"></script>
 
 
-	</body>
-	</html>
+</body>
+</html>
