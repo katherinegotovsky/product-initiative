@@ -286,11 +286,22 @@ body{
 	margin-bottom: 10vh;
 }
 
-.schools img {
-	max-height: 12vh;
+.western, .laurier {
+	max-height: 9vh;
 	width: auto;
 	margin-left: 10vh;
 
+}
+
+.waterloo {
+	max-height: 14vh;
+	width: auto;
+}
+
+.schools-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
 }
 
 .join-container {
@@ -396,6 +407,7 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 5vh;
 }
 
 
