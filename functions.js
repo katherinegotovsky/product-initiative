@@ -39,4 +39,4 @@ ScrollReveal().reveal('#about', { delay: 200, duration: 2000 });
 ScrollReveal().reveal('#program', { delay: 400, duration: 2000 });
 ScrollReveal().reveal('#roles', { delay: 400, duration: 2000 });
 ScrollReveal().reveal('#join', { delay: 200, duration: 2000 });
-ScrollReveal().reveal('#hiring', { delay: 400, duration: 2000 });
+ScrollReveal().reveal('#team', { delay: 400, duration: 2000 });
