@@ -87,14 +87,44 @@ body{
   	cursor: pointer;
   	border: none;
   	padding: 1vh;
-  	max-width: 10vw;
+  	max-width: 20vw;
   	background: #76C962;
-  	font-size: 2vh;
+  	font-size: 3vh;
   	margin-top: 3vh;
   	font-family: 'Merriweather', serif;
   }
 
   #intro button a {
+  	padding: 0;
+  	margin: 0;
+  }
+
+  nav button {
+  	cursor: pointer;
+  	border: none;
+  	max-width: 20vw;
+  	border-color: #76C962;
+  	border-radius: 5vh;
+  	font-size: 3vh;
+  	margin-top: 3vh;
+  	margin-bottom: 3vh;
+  	font-family: 'Merriweather', serif;
+  	float: right;
+  }
+
+
+ #roles button {
+  	cursor: pointer;
+  	border: none;
+  	padding: 1vh;
+  	width: 15vw;
+  	background: #76C962;
+  	font-size: 3vh;
+  	margin-top: 10vh;
+  	font-family: 'Merriweather', serif;
+  }
+
+    #roles button a {
   	padding: 0;
   	margin: 0;
   }
@@ -284,6 +314,7 @@ body{
 	flex-wrap: wrap;
 	margin-top: 10vh;
 	margin-bottom: 10vh;
+	align-items: center;
 }
 
 .western, .laurier {
@@ -392,6 +423,7 @@ body{
 	background-color: #B1E4A4;
 	padding-bottom: 10vh;
 	padding-top: 10vh;
+	align-items: center;
 }
 
 .role {
