@@ -317,17 +317,33 @@ body{
 	align-items: center;
 }
 
-.western, .laurier {
+.western, .laurier, .queens, .mcmaster, .berkeley {
 	max-height: 9vh;
 	width: auto;
 	margin-left: 10vh;
 
 }
 
+.guelph {
+	max-height: 7vh;
+	width: auto;
+	margin-left: 10vh;
+}
+
+.queens, .mcmaster, .berkeley, .guelph {
+	margin-top: 4vh;
+}
+
 .waterloo {
 	max-height: 14vh;
 	width: auto;
 }
+
+/* .guelph {
+	max-height: 10vh;
+	width: auto;
+	margin: 1vh;
+} */
 
 .schools-wrapper {
 	display: flex;
