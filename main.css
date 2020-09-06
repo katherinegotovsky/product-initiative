@@ -124,7 +124,7 @@ body{
   	font-family: 'Merriweather', serif;
   }
 
-    #roles button a {
+#roles button a {
   	padding: 0;
   	margin: 0;
   }
@@ -317,7 +317,7 @@ body{
 	align-items: center;
 }
 
-.western, .laurier, .queens, .mcmaster, .berkeley {
+.western, .laurier, .guelph, .queens, .mcmaster, .berkeley {
 	max-height: 9vh;
 	width: auto;
 	margin-left: 10vh;
@@ -326,12 +326,10 @@ body{
 
 .guelph {
 	max-height: 7vh;
-	width: auto;
-	margin-left: 10vh;
 }
 
-.queens, .mcmaster, .berkeley, .guelph {
-	margin-top: 4vh;
+.queens, .mcmaster, .berkeley {
+	margin-top: 2vh;
 }
 
 .waterloo {
@@ -405,6 +403,19 @@ body{
 	margin: 0.5vh;
 }
 
+#team a {
+	font-size: 12px;
+	padding-top: 5px;
+	text-decoration: none;
+	color: #469049;
+	
+}
+
+#team h5 {
+	font-size: 12px;
+}
+
+
 .hiring-wrapper {
 	padding-top: 10vh;
 	display: flex;
@@ -440,6 +451,11 @@ body{
 	padding-bottom: 10vh;
 	padding-top: 10vh;
 	align-items: center;
+}
+
+#roles .promo {
+	margin-left: 14vw !important;
+	margin-right: 14vw !important;
 }
 
 .role {
