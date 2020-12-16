@@ -5,9 +5,44 @@ html {
 	scroll-behavior: smooth;
 }
 
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: center;
+  }
+  
+/* Create four equal columns that sits next to each other */
+.column {
+	flex: 25%;
+	max-width: 25%;
+	justify-content: center;
+}
+
+.pt-30 {
+	padding-top: 30px
+}
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	object-fit: contain;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
 body {
 	padding-bottom: 0;
 	margin-bottom: 0;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -305,48 +340,6 @@ body{
 	position: absolute;
 	top: 25%;
 	left: 25%;
-}
-
-.schools {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 10vh;
-	margin-bottom: 10vh;
-	align-items: center;
-}
-
-.western, .laurier, .guelph, .queens, .mcmaster, .berkeley {
-	max-height: 9vh;
-	width: auto;
-	margin-left: 10vh;
-
-}
-
-.guelph {
-	max-height: 7vh;
-}
-
-.queens, .mcmaster, .berkeley {
-	margin-top: 2vh;
-}
-
-.waterloo {
-	max-height: 14vh;
-	width: auto;
-}
-
-/* .guelph {
-	max-height: 10vh;
-	width: auto;
-	margin: 1vh;
-} */
-
-.schools-wrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: left;
 }
 
 .join-container {
